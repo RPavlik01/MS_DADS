@@ -9,7 +9,7 @@ compelling data storytelling techniques, the MSDA ensures they are
 well-prepared for success. Emphasizing both theory and practical
 application, the curriculum fosters the development of skills necessary
 to drive impactful change within organizations spanning various
-industries and sectors.TheData Science concentration enhances
+industries and sectors. The Data Science concentration enhances
 mastery in statistical and programming methodologies, delving into the
 advanced topics advanced analytics professionals will need such as
 machine learning, neural networks, and numerical optimization. The
