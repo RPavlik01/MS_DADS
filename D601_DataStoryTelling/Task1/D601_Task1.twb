@@ -1,0 +1,2908 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1211.0901                               -->
+<workbook original-version='18.1' source-build='2024.3.2 (20243.24.1211.0901)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='D601_Task1' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='medical_clean' inline='true' name='federated.1bpnyz60v9hyp815zd4x01nnralg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='medical_clean' name='textscan.18357em1ez5y3e1ar931t0iji8sh'>
+            <connection class='textscan' directory='C:/Users/pavli/Desktop/MS_DADS/D601_DataStorytellingforVariedAudiences/Task1' filename='medical_clean.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.18357em1ez5y3e1ar931t0iji8sh' name='medical_clean.csv' table='[medical_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='CaseOrder' ordinal='0' />
+            <column datatype='string' name='Customer_id' ordinal='1' />
+            <column datatype='string' name='Interaction' ordinal='2' />
+            <column datatype='string' name='UID' ordinal='3' />
+            <column datatype='string' name='City' ordinal='4' />
+            <column datatype='string' name='State' ordinal='5' />
+            <column datatype='string' name='County' ordinal='6' />
+            <column datatype='integer' name='Zip' ordinal='7' />
+            <column datatype='real' name='Lat' ordinal='8' />
+            <column datatype='real' name='Lng' ordinal='9' />
+            <column datatype='integer' name='Population' ordinal='10' />
+            <column datatype='string' name='Area' ordinal='11' />
+            <column datatype='string' name='TimeZone' ordinal='12' />
+            <column datatype='string' name='Job' ordinal='13' />
+            <column datatype='integer' name='Children' ordinal='14' />
+            <column datatype='integer' name='Age' ordinal='15' />
+            <column datatype='real' name='Income' ordinal='16' />
+            <column datatype='string' name='Marital' ordinal='17' />
+            <column datatype='string' name='Gender' ordinal='18' />
+            <column datatype='string' name='ReAdmis' ordinal='19' />
+            <column datatype='real' name='VitD_levels' ordinal='20' />
+            <column datatype='integer' name='Doc_visits' ordinal='21' />
+            <column datatype='integer' name='Full_meals_eaten' ordinal='22' />
+            <column datatype='integer' name='vitD_supp' ordinal='23' />
+            <column datatype='string' name='Soft_drink' ordinal='24' />
+            <column datatype='string' name='Initial_admin' ordinal='25' />
+            <column datatype='string' name='HighBlood' ordinal='26' />
+            <column datatype='string' name='Stroke' ordinal='27' />
+            <column datatype='string' name='Complication_risk' ordinal='28' />
+            <column datatype='string' name='Overweight' ordinal='29' />
+            <column datatype='string' name='Arthritis' ordinal='30' />
+            <column datatype='string' name='Diabetes' ordinal='31' />
+            <column datatype='string' name='Hyperlipidemia' ordinal='32' />
+            <column datatype='string' name='BackPain' ordinal='33' />
+            <column datatype='string' name='Anxiety' ordinal='34' />
+            <column datatype='string' name='Allergic_rhinitis' ordinal='35' />
+            <column datatype='string' name='Reflux_esophagitis' ordinal='36' />
+            <column datatype='string' name='Asthma' ordinal='37' />
+            <column datatype='string' name='Services' ordinal='38' />
+            <column datatype='real' name='Initial_days' ordinal='39' />
+            <column datatype='real' name='TotalCharge' ordinal='40' />
+            <column datatype='real' name='Additional_charges' ordinal='41' />
+            <column datatype='integer' name='Item1' ordinal='42' />
+            <column datatype='integer' name='Item2' ordinal='43' />
+            <column datatype='integer' name='Item3' ordinal='44' />
+            <column datatype='integer' name='Item4' ordinal='45' />
+            <column datatype='integer' name='Item5' ordinal='46' />
+            <column datatype='integer' name='Item6' ordinal='47' />
+            <column datatype='integer' name='Item7' ordinal='48' />
+            <column datatype='integer' name='Item8' ordinal='49' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CaseOrder</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CaseOrder]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>CaseOrder</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer_id]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Customer_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interaction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Interaction]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Interaction</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UID]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>UID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zip]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lat]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Lat</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lng</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lng]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Lng</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Area]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Area</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TimeZone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TimeZone]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>TimeZone</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Job</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Children</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Children]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Children</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Income]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Income</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Marital]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Marital</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ReAdmis</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ReAdmis]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>ReAdmis</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VitD_levels</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VitD_levels]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>VitD_levels</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Doc_visits</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Doc_visits]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Doc_visits</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Full_meals_eaten</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Full_meals_eaten]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Full_meals_eaten</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vitD_supp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[vitD_supp]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>vitD_supp</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Soft_drink</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Soft_drink]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Soft_drink</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Initial_admin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Initial_admin]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Initial_admin</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HighBlood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HighBlood]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>HighBlood</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stroke</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stroke]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Stroke</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Complication_risk</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Complication_risk]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Complication_risk</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overweight</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Overweight]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Overweight</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arthritis</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Arthritis]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Arthritis</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diabetes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Diabetes]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Diabetes</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hyperlipidemia</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hyperlipidemia]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Hyperlipidemia</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BackPain</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BackPain]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>BackPain</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Anxiety</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Anxiety]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Anxiety</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Allergic_rhinitis</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Allergic_rhinitis]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Allergic_rhinitis</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reflux_esophagitis</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Reflux_esophagitis]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Reflux_esophagitis</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Asthma</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Asthma]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Asthma</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Services</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Services]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Services</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Initial_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Initial_days]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Initial_days</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalCharge</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalCharge]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>TotalCharge</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Additional_charges</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Additional_charges]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Additional_charges</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item1]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Item1</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item2]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Item2</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item3]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Item3</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item4]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Item4</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item5]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Item5</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item6]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Item6</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item7]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Item7</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item8]</local-name>
+            <parent-name>[medical_clean.csv]</parent-name>
+            <remote-alias>Item8</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Additional charges' datatype='real' name='[Additional_charges]' role='measure' type='quantitative' />
+      <column caption='Allergic rhinitis' datatype='string' name='[Allergic_rhinitis]' role='dimension' type='nominal' />
+      <column caption='Back Pain' datatype='string' name='[BackPain]' role='dimension' type='nominal' />
+      <column caption='Case Order' datatype='integer' name='[CaseOrder]' role='measure' type='quantitative' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Complication risk' datatype='string' name='[Complication_risk]' role='dimension' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Customer id' datatype='string' name='[Customer_id]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='Doc visits (bin)' datatype='integer' name='[Doc visits (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Doc_visits]' peg='0' size='2' />
+      </column>
+      <column caption='Doc visits' datatype='integer' name='[Doc_visits]' role='measure' type='quantitative' />
+      <column caption='Full meals eaten' datatype='integer' name='[Full_meals_eaten]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column caption='High Blood' datatype='string' name='[HighBlood]' role='dimension' type='nominal' />
+      <column caption='Initial admin' datatype='string' name='[Initial_admin]' role='dimension' type='nominal' />
+      <column caption='Initial days' datatype='real' name='[Initial_days]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Re Admis' datatype='string' name='[ReAdmis]' role='dimension' type='nominal' />
+      <column caption='Reflux esophagitis' datatype='string' name='[Reflux_esophagitis]' role='dimension' type='nominal' />
+      <column caption='Soft drink' datatype='string' name='[Soft_drink]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Time Zone' datatype='string' name='[TimeZone]' role='dimension' type='nominal' />
+      <column caption='Total Charge' datatype='real' name='[TotalCharge]' role='measure' type='quantitative' />
+      <column caption='VitD levels' datatype='real' name='[VitD_levels]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='medical_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]' role='measure' type='quantitative' />
+      <column caption='vitD supp' datatype='integer' name='[vitD_supp]' role='measure' type='quantitative' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Initial_admin]' derivation='None' name='[none:Initial_admin:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/pavli/Desktop/MS_DADS/D601_DataStorytellingforVariedAudiences/Task1/medical_clean.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='01/24/2025 09:56:05 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='medical_clean' increment-value='%null%' refresh-type='create' rows-inserted='10000' timestamp-start='2025-01-24 21:56:03.535' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CaseOrder</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CaseOrder]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CaseOrder</remote-alias>
+              <ordinal>0</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Interaction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Interaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Interaction</remote-alias>
+              <ordinal>2</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[UID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>UID</remote-alias>
+              <ordinal>3</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>4</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3433</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>5</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>County</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[County]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>County</remote-alias>
+              <ordinal>6</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1383</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zip</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zip</remote-alias>
+              <ordinal>7</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5505</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lat</remote-alias>
+              <ordinal>8</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5505</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lng</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lng]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lng</remote-alias>
+              <ordinal>9</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5610</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>10</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3515</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Area</remote-alias>
+              <ordinal>11</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TimeZone</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TimeZone]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TimeZone</remote-alias>
+              <ordinal>12</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job</remote-alias>
+              <ordinal>13</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>981</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Children</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Children]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Children</remote-alias>
+              <ordinal>14</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>15</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Income</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Income</remote-alias>
+              <ordinal>16</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Marital</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Marital]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Marital</remote-alias>
+              <ordinal>17</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>18</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ReAdmis</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ReAdmis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ReAdmis</remote-alias>
+              <ordinal>19</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>VitD_levels</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[VitD_levels]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>VitD_levels</remote-alias>
+              <ordinal>20</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Doc_visits</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Doc_visits]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Doc_visits</remote-alias>
+              <ordinal>21</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Full_meals_eaten</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Full_meals_eaten]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Full_meals_eaten</remote-alias>
+              <ordinal>22</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vitD_supp</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[vitD_supp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vitD_supp</remote-alias>
+              <ordinal>23</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Soft_drink</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Soft_drink]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Soft_drink</remote-alias>
+              <ordinal>24</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Initial_admin</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Initial_admin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Initial_admin</remote-alias>
+              <ordinal>25</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HighBlood</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[HighBlood]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HighBlood</remote-alias>
+              <ordinal>26</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stroke</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Stroke]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stroke</remote-alias>
+              <ordinal>27</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Complication_risk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Complication_risk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Complication_risk</remote-alias>
+              <ordinal>28</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Overweight</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Overweight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Overweight</remote-alias>
+              <ordinal>29</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Arthritis</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Arthritis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Arthritis</remote-alias>
+              <ordinal>30</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Diabetes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Diabetes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Diabetes</remote-alias>
+              <ordinal>31</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hyperlipidemia</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Hyperlipidemia]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hyperlipidemia</remote-alias>
+              <ordinal>32</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BackPain</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BackPain]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BackPain</remote-alias>
+              <ordinal>33</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Anxiety</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Anxiety]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Anxiety</remote-alias>
+              <ordinal>34</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Allergic_rhinitis</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Allergic_rhinitis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Allergic_rhinitis</remote-alias>
+              <ordinal>35</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reflux_esophagitis</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Reflux_esophagitis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reflux_esophagitis</remote-alias>
+              <ordinal>36</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Asthma</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Asthma]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Asthma</remote-alias>
+              <ordinal>37</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Services</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Services]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Services</remote-alias>
+              <ordinal>38</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Initial_days</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Initial_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Initial_days</remote-alias>
+              <ordinal>39</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalCharge</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalCharge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalCharge</remote-alias>
+              <ordinal>40</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Additional_charges</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Additional_charges]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Additional_charges</remote-alias>
+              <ordinal>41</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8404</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item1</remote-alias>
+              <ordinal>42</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item2</remote-alias>
+              <ordinal>43</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item3</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item3</remote-alias>
+              <ordinal>44</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item4</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item4</remote-alias>
+              <ordinal>45</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item5</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item5</remote-alias>
+              <ordinal>46</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item6</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item6</remote-alias>
+              <ordinal>47</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item7</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item7]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item7</remote-alias>
+              <ordinal>48</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item8</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Item8]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item8</remote-alias>
+              <ordinal>49</ordinal>
+              <family>medical_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>&quot;Nonbinary&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Initial_admin:nk]' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;Elective Admission&quot;</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>&quot;Observation Admission&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;Emergency Admission&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='medical_clean.csv' id='medical_clean.csv_FA13048CC69E4334BB7679BF4C4F68C6'>
+            <properties context=''>
+              <relation connection='textscan.18357em1ez5y3e1ar931t0iji8sh' name='medical_clean.csv' table='[medical_clean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='CaseOrder' ordinal='0' />
+                  <column datatype='string' name='Customer_id' ordinal='1' />
+                  <column datatype='string' name='Interaction' ordinal='2' />
+                  <column datatype='string' name='UID' ordinal='3' />
+                  <column datatype='string' name='City' ordinal='4' />
+                  <column datatype='string' name='State' ordinal='5' />
+                  <column datatype='string' name='County' ordinal='6' />
+                  <column datatype='integer' name='Zip' ordinal='7' />
+                  <column datatype='real' name='Lat' ordinal='8' />
+                  <column datatype='real' name='Lng' ordinal='9' />
+                  <column datatype='integer' name='Population' ordinal='10' />
+                  <column datatype='string' name='Area' ordinal='11' />
+                  <column datatype='string' name='TimeZone' ordinal='12' />
+                  <column datatype='string' name='Job' ordinal='13' />
+                  <column datatype='integer' name='Children' ordinal='14' />
+                  <column datatype='integer' name='Age' ordinal='15' />
+                  <column datatype='real' name='Income' ordinal='16' />
+                  <column datatype='string' name='Marital' ordinal='17' />
+                  <column datatype='string' name='Gender' ordinal='18' />
+                  <column datatype='string' name='ReAdmis' ordinal='19' />
+                  <column datatype='real' name='VitD_levels' ordinal='20' />
+                  <column datatype='integer' name='Doc_visits' ordinal='21' />
+                  <column datatype='integer' name='Full_meals_eaten' ordinal='22' />
+                  <column datatype='integer' name='vitD_supp' ordinal='23' />
+                  <column datatype='string' name='Soft_drink' ordinal='24' />
+                  <column datatype='string' name='Initial_admin' ordinal='25' />
+                  <column datatype='string' name='HighBlood' ordinal='26' />
+                  <column datatype='string' name='Stroke' ordinal='27' />
+                  <column datatype='string' name='Complication_risk' ordinal='28' />
+                  <column datatype='string' name='Overweight' ordinal='29' />
+                  <column datatype='string' name='Arthritis' ordinal='30' />
+                  <column datatype='string' name='Diabetes' ordinal='31' />
+                  <column datatype='string' name='Hyperlipidemia' ordinal='32' />
+                  <column datatype='string' name='BackPain' ordinal='33' />
+                  <column datatype='string' name='Anxiety' ordinal='34' />
+                  <column datatype='string' name='Allergic_rhinitis' ordinal='35' />
+                  <column datatype='string' name='Reflux_esophagitis' ordinal='36' />
+                  <column datatype='string' name='Asthma' ordinal='37' />
+                  <column datatype='string' name='Services' ordinal='38' />
+                  <column datatype='real' name='Initial_days' ordinal='39' />
+                  <column datatype='real' name='TotalCharge' ordinal='40' />
+                  <column datatype='real' name='Additional_charges' ordinal='41' />
+                  <column datatype='integer' name='Item1' ordinal='42' />
+                  <column datatype='integer' name='Item2' ordinal='43' />
+                  <column datatype='integer' name='Item3' ordinal='44' />
+                  <column datatype='integer' name='Item4' ordinal='45' />
+                  <column datatype='integer' name='Item5' ordinal='46' />
+                  <column datatype='integer' name='Item6' ordinal='47' />
+                  <column datatype='integer' name='Item7' ordinal='48' />
+                  <column datatype='integer' name='Item8' ordinal='49' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.1bpnyz60v9hyp815zd4x01nnralg'>
+      <datasources>
+        <datasource caption='medical_clean' name='federated.1bpnyz60v9hyp815zd4x01nnralg' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1bpnyz60v9hyp815zd4x01nnralg'>
+        <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+        <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Age:qk]' included-values='in-range'>
+        <min>18</min>
+        <max>89</max>
+      </filter>
+      <filter class='categorical' column='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:State:nk]'>
+        <groupfilter function='level-members' level='[none:State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Doc Visits vs Re Admis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='medical_clean' name='federated.1bpnyz60v9hyp815zd4x01nnralg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bpnyz60v9hyp815zd4x01nnralg'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Doc visits (bin)' datatype='integer' name='[Doc visits (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Doc_visits]' peg='0' size='2' />
+            </column>
+            <column caption='Doc visits' datatype='integer' name='[Doc_visits]' role='measure' type='quantitative' />
+            <column caption='Re Admis' datatype='string' name='[ReAdmis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Doc visits (bin)]' derivation='None' name='[none:Doc visits (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[ReAdmis]' derivation='None' name='[none:ReAdmis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Doc_visits]' derivation='Sum' name='[sum:Doc_visits:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Age:qk]</column>
+            <column>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1bpnyz60v9hyp815zd4x01nnralg].[sum:Doc_visits:qk]</rows>
+        <cols>([federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk] / [federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Doc visits (bin):ok])</cols>
+        <show-full-range>
+          <column>[federated.1bpnyz60v9hyp815zd4x01nnralg].[Doc visits (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{6A36312E-6D6B-478D-A69A-E8F0A4A49C22}' />
+    </worksheet>
+    <worksheet name='Re Admis By Gender'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='medical_clean' name='federated.1bpnyz60v9hyp815zd4x01nnralg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bpnyz60v9hyp815zd4x01nnralg'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Re Admis' datatype='string' name='[ReAdmis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[ReAdmis]' derivation='Count' name='[cnt:ReAdmis:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ReAdmis]' derivation='None' name='[none:ReAdmis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Gender:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1bpnyz60v9hyp815zd4x01nnralg].[cnt:ReAdmis:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:State:nk]</column>
+            <column>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Gender:nk]' value='22' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Gender:nk]' value='75' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk]' value='21' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Gender:nk]' />
+              <text column='[federated.1bpnyz60v9hyp815zd4x01nnralg].[cnt:ReAdmis:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bpnyz60v9hyp815zd4x01nnralg].[cnt:ReAdmis:qk]</rows>
+        <cols>([federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk] / [federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Gender:nk])</cols>
+      </table>
+      <simple-id uuid='{38AE15C9-0FD9-4C37-9862-C9F51087C3C0}' />
+    </worksheet>
+    <worksheet name='Re Admis By Initial Admin'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='medical_clean' name='federated.1bpnyz60v9hyp815zd4x01nnralg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bpnyz60v9hyp815zd4x01nnralg'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Initial admin' datatype='string' name='[Initial_admin]' role='dimension' type='nominal' />
+            <column caption='Re Admis' datatype='string' name='[ReAdmis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[ReAdmis]' derivation='Count' name='[cnt:ReAdmis:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Initial_admin]' derivation='None' name='[none:Initial_admin:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ReAdmis]' derivation='None' name='[none:ReAdmis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Initial_admin:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1bpnyz60v9hyp815zd4x01nnralg].[cnt:ReAdmis:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:State:nk]</column>
+            <column>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Initial_admin:nk]' value='116' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk]' value='45' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Initial_admin:nk]' />
+              <text column='[federated.1bpnyz60v9hyp815zd4x01nnralg].[cnt:ReAdmis:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bpnyz60v9hyp815zd4x01nnralg].[cnt:ReAdmis:qk]</rows>
+        <cols>([federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk] / [federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Initial_admin:nk])</cols>
+      </table>
+      <simple-id uuid='{85C462E3-19B4-4C55-A254-78F1013D8960}' />
+    </worksheet>
+    <worksheet name='Re Admis By State'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='medical_clean' name='federated.1bpnyz60v9hyp815zd4x01nnralg' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1bpnyz60v9hyp815zd4x01nnralg'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Re Admis' datatype='string' name='[ReAdmis]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[ReAdmis]' derivation='Count' name='[cnt:ReAdmis:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ReAdmis]' derivation='None' name='[none:ReAdmis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk]'>
+            <groupfilter function='member' level='[none:ReAdmis:nk]' member='&quot;Yes&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk]</column>
+            <column>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:State:nk]</column>
+            <column>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1bpnyz60v9hyp815zd4x01nnralg].[Longitude (generated)]' field-type='quantitative' max='36309295.736052811' min='19805613.864211503' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1bpnyz60v9hyp815zd4x01nnralg].[Latitude (generated)]' field-type='quantitative' max='10433397.87044638' min='1804220.9492693122' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1bpnyz60v9hyp815zd4x01nnralg].[cnt:ReAdmis:qk]' num-steps='5' palette='orange_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1bpnyz60v9hyp815zd4x01nnralg].[cnt:ReAdmis:qk]' />
+              <text column='[federated.1bpnyz60v9hyp815zd4x01nnralg].[cnt:ReAdmis:qk]' />
+              <lod column='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:State:nk]' />
+              <geometry column='[federated.1bpnyz60v9hyp815zd4x01nnralg].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bpnyz60v9hyp815zd4x01nnralg].[Latitude (generated)]</rows>
+        <cols>[federated.1bpnyz60v9hyp815zd4x01nnralg].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{A3FB3326-5610-4BA7-B0FF-C9330BF7C9AF}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C341046F-E750-4D8D-864E-269B799BC7B5}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='medical_clean' name='federated.1bpnyz60v9hyp815zd4x01nnralg' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1bpnyz60v9hyp815zd4x01nnralg'>
+        <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+        <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='45833' id='1' name='Doc Visits vs Re Admis' w='36018' x='512' y='53646' />
+        <zone h='7813' id='2' name='Doc Visits vs Re Admis' pane-specification-id='2' param='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk]' type-v2='color' w='5637' x='33089' y='53776' />
+        <zone h='50260' id='3' name='Re Admis By Gender' w='35871' x='46633' y='1172' />
+        <zone h='7943' id='4' name='Re Admis By Gender' param='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='11713' x='87482' y='9375' />
+        <zone h='47526' id='6' name='Re Admis By State' w='57613' x='41947' y='52344' />
+        <zone h='5729' id='7' mode='checkdropdown' name='Re Admis By State' param='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:State:nk]' type-v2='filter' w='11713' x='87555' y='2474' />
+        <zone h='7943' id='8' name='Re Admis By State' pane-specification-id='0' param='[federated.1bpnyz60v9hyp815zd4x01nnralg].[cnt:ReAdmis:qk]' type-v2='color' w='12958' x='87408' y='52474' />
+        <zone h='48568' id='9' name='Re Admis By Initial Admin' w='35139' x='586' y='1302' />
+        <zone h='10156' id='10' name='Re Admis By Initial Admin' pane-specification-id='0' param='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Initial_admin:nk]' type-v2='color' w='11567' x='34553' y='2604' />
+        <zone h='10547' id='5' name='Re Admis By Gender' pane-specification-id='0' param='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Gender:nk]' type-v2='color' w='6881' x='77452' y='1302' />
+      </zones>
+      <devicelayouts>
+        <devicelayout name='Desktop' />
+      </devicelayouts>
+      <simple-id uuid='{B2E2814A-9B8B-48D1-9714-991BBA46B681}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Re Admis By State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:State:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1bpnyz60v9hyp815zd4x01nnralg].[cnt:ReAdmis:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bpnyz60v9hyp815zd4x01nnralg].[cnt:ReAdmis:qk]</field>
+            <field>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk]</field>
+            <field>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:State:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{5348A6F6-AB15-435A-9293-9EDF121C8477}' />
+    </window>
+    <window class='worksheet' name='Re Admis By Initial Admin'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Initial_admin:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Initial_admin:nk]</field>
+            <field>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3648E0FB-B3E3-47ED-946E-68DB0870000F}' />
+    </window>
+    <window class='worksheet' name='Re Admis By Gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Age:qk]</field>
+            <field>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Gender:nk]</field>
+            <field>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C1047004-2DB5-4C5E-87F5-DDF648DC6EED}' />
+    </window>
+    <window class='worksheet' name='Doc Visits vs Re Admis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Doc visits (bin):ok]</field>
+            <field>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Initial_admin:nk]</field>
+            <field>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EBAE1990-20DC-4E68-B0C1-AB07D90EF778}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Doc Visits vs Re Admis'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:ReAdmis:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Re Admis By Gender'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Gender:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Re Admis By Initial Admin'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1bpnyz60v9hyp815zd4x01nnralg].[none:Initial_admin:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Re Admis By State'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{11EBA704-A83A-4CE5-9087-5E54752B8244}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D04244BE-9E57-4A6C-8469-41F08E44CBF2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO29d5Bl13ng97vh5Ry6+3UO05MDJiEMgAHABAOUwC2ttNxirYLlkqtcLue1
+      q7Yc9Ie3rLVdtmq9trWlqpWXoijtSiIpEiQoguCQIIYAJufp3DMdXueX87vvBv/R0z3d093T
+      Od9f1dT0u/fcc79z7/nuid/3CYZhGJiY7FPE7RbAxGQ7MRXAZF9jKoDJvsZUAJN9zZoVIJvO
+      oG+kJCtF10hnckuezmyXXCarJjExws2bN4mn84uej49HKShP3+bocBR1hXlPjgxy8+ZNYqlF
+      6ophMPy4l55Hw08V4Gc/eZ8bN27w45/+fJHsDH7xwV9zs2No9kh3RwfKIimnpqYWHPvJ+9/j
+      xo0b/OSjjxecu3f5F8TKc2+lMxWLMdz1kEwFyrk0mcKcBJrCg+6+Wbn+/rt/wcNHE7Onuzo6
+      Fn1Ii8m1l3n0+NGTv3SSiRjpTIFkMglAMTVBLDP3oStEh54+w3Qyib4Fc4P3O7s5ffoMN69c
+      RjcM+roekM4/laur6wG37zwEYDw6wKefXUOtFBkcHOTx8Cg9nQ/IlVT6+vsxtAr3794hnSsB
+      8LCrj7Nnz3Dr6mckEgmA2fI/vH0F3RGi2mtDflYoWbYw3PuAgVge3RB589UX0ZUc1tBhslMD
+      lNIWPr7WTSoW48jBPv7d58MYmTEOHWqlInnRy1kyYwMM5w0Otx+ktioAgKFpWO12rn1yicMv
+      vcHtq1d4682L0zfVynz3uz+i2mun9uSrTD0eoDTej5BROBiSyTlbGHvczUh0mBMvvTErazk7
+      RajtLFPRPjIehav3H5OMxWmp7+CzrjiF2DDtLfWIvgbKmSkmex+SsHjJpzK885W3NvyF7iQe
+      DzxmcngIw+7CoiTpHRc4cbiOKz//IQ5fDbVHLxB9+BnjeQG7XCYxkuWG14lss9JQFaFUuocq
+      OHn9lRc3TUZdyfOzj36KJ1RL952reJuPc/v6Vd588w20wgSCtxUlPUpuopdHCZmm+mqM3Dj3
+      oyWkeBevfeltbt28gSSCkJkkK4UQhekWQylkuH71KppsJz7YRUY7wWDnQ95843Wm0goHj0hc
+      +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
+      s2kNAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Doc Visits vs Re Admis' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Re Admis By Gender' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Re Admis By Initial Admin' width='192'>
+      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
+      Vv+sI0asAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Re Admis By State' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
