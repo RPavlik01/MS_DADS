@@ -1,0 +1,16 @@
+Optimization is a large class of business problems requiring the iterative algorithmic maximization or minimization or one or
+more variables. Students in this course will select and use a variety of optimization approaches to address various business
+needs. The course covers classes of optimization problems at a foundational level (continuous/discrete, linear/nonlinear,
+and bounded/unbounded) and the solving of linear optimization problems in both Python and R through the use of gradient
+and non-gradient-based algorithms. Analytics Programming is a prerequisite.
+
+This course covers the following competencies:
+
+● Begin your course by discussing your course planning tool report with your instructor and creating your personalized
+course plan together.
+
+● The learner analyzes a business case to recommend a particular optimization approach.
+
+● The learner identifies the objective function and constraints for an optimization problem.
+
+● The learner solves an optimization problem programmatically.

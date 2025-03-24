@@ -1,0 +1,22 @@
+Data Management builds proficiency in using both relational and non-relational databases. Topics include selection of a data
+storage architecture, data types, data structures, normalization and denormalization, and querying databases. Structured
+Query Language (SQL) topics including Data Definition Language (DDL) and Data Manipulation Language (DML) are
+covered, including joins, aggregations, and transactions. Non-relational approaches to organizing and querying data are
+contrasted with relational approaches to build competency in adapting data storage architectures to business needs.
+
+This course covers the following competencies:
+
+● Begin your course by discussing your course planning tool report with your instructor and creating your personalized
+course plan together.
+
+● The learner recommends an appropriate data architecture.
+
+● The learner examines the data available for analysis to determine their dimension, quality, relations, and limitations.
+
+● The learner constructs a logical data model.
+
+● The learner implements physical data models by incorporating required data.
+
+● The learner performs database queries to answer a business question.
+
+● The learner uses appropriate data manipulation language.

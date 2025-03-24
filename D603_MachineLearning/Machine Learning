@@ -1,0 +1,20 @@
+Machine Learning is the broad discipline of developing algorithms and statistical models to predict, classify, or cluster data
+and that iteratively improve over time. Machine Learning focuses on building, training, running, and testing supervised and
+unsupervised models and quantifying the accuracy and precision of those models to determine which may best be used in a
+particular business situation. Supervised methods covered include k-nearest neighbors, logistic regression, decision trees,
+and support vector machines. Unsupervised models covered include k-means clustering, hierarchical clustering, and tdistributed
+stochastic neighbor embedding (t-SNE). Ensemble methods are also presented. Prerequisites are Analytics
+Programming and Statistical Data Mining.
+
+This course covers the following competencies:
+
+● Begin your course by discussing your course planning tool report with your instructor and creating your personalized
+course plan together.
+
+● The learner recommends a supervised machine learning model based on a comparison of model performance given a
+business problem.
+
+● The learner recommends an unsupervised machine learning model based on a comparison of model performance
+given a business problem.
+
+● The learner applies time series models in generating forecasts.

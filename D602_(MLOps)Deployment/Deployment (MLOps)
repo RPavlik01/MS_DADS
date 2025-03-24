@@ -1,0 +1,17 @@
+Deployment is the practice of operationalizing data analysis within a business environment. Given an analysis, learners
+determine the business functional and non-functional requirements for wider use and implement pipelines and functions to
+deploy analyses at scale. Topics including security, scalability, usability, and availability are discussed. Prerequisites for
+this course are Analytical Programming, Data Management, Data Preparation, and Statistical Data Mining.
+
+This course covers the following competencies:
+
+● Begin your course by discussing your course planning tool report with your instructor and creating your personalized
+course plan together.
+
+● The learner analyzes a business case to determine the requirements necessary for deployment.
+
+● The learner implements a data product pipeline to address organizational needs.
+
+● The learner implements a function to call and receive information between multiple systems for deployment.
+
+● The learner deploys a data product based on project requirements.
