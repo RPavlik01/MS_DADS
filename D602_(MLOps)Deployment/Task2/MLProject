@@ -1,0 +1,25 @@
+name: TestPipeline
+
+conda_env: pipeline_env.yaml
+
+entry_points:
+    main:
+        parameters:
+            data: {type: str, default: cleaned_data.csv}
+            num_alphas: {type: int, default: 20}
+        command: "python Main.py {data} {num_alphas}"
+    import_format:
+        parameters:
+            data: {type: str, default: cleaned_data.csv}
+        command: "python Steps/StepB_Import_Format.py {data}"
+    filter_clean:
+        command: "python Steps/StepC_Filter_Clean.py"
+    train_model:
+        parameters:
+            num_alphas: {type: int, default: 20}
+        command: "python Steps/poly_regressor_Python_1.0.0.py {num_alphas}"
+    run_all:
+        parameters:
+            data: {type: str, default: cleaned_data.csv}
+            num_alphas: {type: int, default: 20}
+        command: "python Main.py {data} {num_alphas}"
